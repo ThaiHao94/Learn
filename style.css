@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.h-top {
+    padding: 16px 45px;
+    border-bottom: 1px solid #151515;
+    height: 48px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    
+}
+
+.h-left-info {
+    display: flex;
+}
+
+.h-left-info a {
+    counter-reset: #6A983C;
+    text-decoration: none;
+    margin-right: 33px;
+}
+
+.h-left-info p {
+    margin-right: 33px;
+}
+
