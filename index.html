@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <div id="container">
+        <input type="text" id="inputElem" value="T3H">
+    </div>
+    <div>
+        <h1>h1</h1>
+    </div>
+    <div>
+        <h1>h2</h1>
+    </div>
+    <div>
+        <h1>h3</h1>
+    </div>
+    <div>
+        <h1>h4</h1>
+    </div> -->
+    <h2>Modal Login Form</h2>
+
+    <button onclick="handleShowLogin()" style="width:auto;">Login</button>
+    
+    <div id="id01" class="modal">
+      
+      <form onsubmit="event.preventDefault(); handleLogin();" class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="handleHideLogin()" class="close" title="Close Modal">&times;</span>
+          <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input id="userName" type="text" placeholder="Enter Username" name="uname" >
+          <p id="validateUserName" style="color: red; font-size: 12px; display: none;">UserName is not empty</p>
+    
+          <label for="psw"><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" name="psw" >
+          <p id="validatePassword" style="color: red; font-size: 12px; display: none;">Password is not empty</p>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="handleCancel()" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
