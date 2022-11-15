@@ -81,8 +81,8 @@ const handleShowLogin = () => {
     }
 
     if (userName.value === 'admin' && password.value === 'admin') {
-      // window.location.href = 'https://youtube.com'
-      window.location.assign('https://youtube.com')
+      window.location.href = 'https://youtube.com'
+      // window.location.assign('https://youtube.com')
     }
   };
 
