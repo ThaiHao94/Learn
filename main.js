@@ -79,8 +79,14 @@ const handleShowLogin = () => {
     } else {
       document.getElementById("validatePassword").style.display = "none";
     }
+
+    if (userName.value === 'admin' && password.value === 'admin') {
+      // window.location.href = 'https://youtube.com'
+      window.location.assign('https://youtube.com')
+    }
   };
 
   /**
  * userName === 'admin' and password === 'admin' => link to https://youtube.com
  */
+    
