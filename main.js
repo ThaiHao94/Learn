@@ -27,19 +27,30 @@
 //     }
 // }
 const regexEmail =/\w+@\w+\.com/;
-const regexPassword = /\abc/;
+const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&.])[A-Za-z\d$@$!%*?&.]/;
 
 const errorValidateEmail = document.getElementById('validateEmail');
-const errorValidatePassword = 'acb'
+const errorValidatePassword = document.getElementById('validatePassword');
 const emailElem = document.getElementById('emailInput');
+const passwordElem = document.getElementById('passwordInput');
 
 function handleSubmit() {
     if (emailElem.value === "") {
         errorValidateEmail.innerHTML = 'Email is not empty';
-    } else if (!regexEmail.test(emailElem.value)) {
+    } else if(!regexEmail.test(emailElem.value)) {
         errorValidateEmail.innerHTML = 'Email is invalid';
     } else {
         errorValidateEmail.innerHTML = 'Email is valid';
     }
-}
-        
+
+    if (passwordElem.value === "") {
+        errorValidatePassword.innerHTML = 'Password is not empty'
+    } 
+    if (passwordElem.value.length < 8) {
+        errorValidatePassword.innerHTML = 'Password must be more than 8 characters '   
+    } else if (!regexPassword.test(passwordElem.value)) {
+        errorValidatePassword.innerHTML = 'Password is invalid'
+    } else {
+        errorValidatePassword.innerHTML = 'Password is valid'
+    }
+}        
