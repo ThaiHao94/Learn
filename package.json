@@ -1,0 +1,26 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaiHao94/Learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThaiHao94/Learn/issues"
+  },
+  "homepage": "https://github.com/ThaiHao94/Learn#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "axios": "^1.1.3"
+  }
+}
