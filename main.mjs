@@ -1,4 +1,7 @@
 // // Tìm hiểu Promise, async/await
+// // https://jsonplaceholder.typicode.com/
+// // https://www.npmjs.com/package/axios
+// // https://apipheny.io/free-api/
 
 // // Các trạng thái của Promise
 
